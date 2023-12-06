@@ -1,0 +1,17 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2222
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+Not Found: /
+"GET / HTTP/1.1" 404 2171
+"GET /app HTTP/1.1" 301 0
+"GET /app/ HTTP/1.1" 200 619
+"GET /app/ HTTP/1.1" 200 619
+"GET /app/users/ HTTP/1.1" 200 484
+"GET /app/ HTTP/1.1" 200 619
+"GET /app/create/ HTTP/1.1" 200 1261
+"POST /app/create/ HTTP/1.1" 200 1376

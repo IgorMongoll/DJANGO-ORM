@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <h1>{{ user.username|upper }}'s posts</h1>
+        {% for post in posts %}
+            <li>{{ post.created_at }} - {{ post.post }}  - <a href="{% url 'delete_post' post_id=post.id username=post.user.username %}">Delete this post</a> <a href="{% url 'update_post' post_id=post.id username=post.user.username %}">update this post</a>
+        </li>
+            {% endfor %}
+    </ul>
+    <a href="{% url 'user_detail' username=user.username %}">Back to {{ user.username }}'s profile</a>
+
+</body>
+</html>
